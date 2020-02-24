@@ -23,10 +23,9 @@ email: trayanagpetrova@gmail.com
 description: Recipes
 destination: docs
 baseurl: "/project-assignment-jekyll"
-url: "" 
-
-facebook_username: 
-github_username:  
+url: ""
+facebook_username:
+github_username:
 
 # Build settings
 # theme: minima
