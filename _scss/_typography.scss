@@ -1,0 +1,36 @@
+html {
+	font-size: var(--font-size, 18px);
+	line-height: var(--font-line-height,1.5);
+}
+
+
+body,form,input,textarea,option,select,button{
+	font:inherit
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 2.0rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.4rem; }
+h6 { font-size: 1.2rem; }
+
+h1,h2,h3,h4,h5,h6 {
+	padding-bottom: 0.5rem;
+	padding-top: 1.5rem;
+    font-weight: normal;
+}
+
+ul, ol {
+
+	margin-left: 1.5rem;
+}
+
+
+ul ul {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+
+

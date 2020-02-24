@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Gabriela&display=swap');
+
+body{
+	font-family: 'Gabriela',serif;
+}
+*{ padding: 0;
+    margin:0;
+    box-sizing: border-box;
+	
+}
+header{
+	display: flex;
+	justify-content: space-between;
+    padding: 2.3em 0;
+	background: url(../images/brooke-lark-wMzx2nBdeng-unsplash_70_1_50.jpg) center center no-repeat fixed;
+	background-size: cover;
+	padding: 0.5em;
+	min-height: 90vh;
+	
+}
+
+ header nav {
+	position: absolute;
+	top:50px;
+	right: 0px;
+	padding: 0.5em;
+}
+
+.site-branding {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.logo {
+ display: block;
+}
+
+
+header section{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	z-index: 5;
+	font-size: 1.5em;
+}
+
+header section h2{
+	padding: 2em 2em;
+	font-weight:400;
+}
+header section p{
+	transition: transform 0.3s;
+
+&:hover{
+	transform: scale(1.5,1.5);
+	color: rgb(143, 32, 59)
+}
+}
+
+.nav{
+	
+
+	// @include bp(mobile){
+	// 	display: none;
+	// }
+
+ ul {
+	display: flex;
+	margin: 5px;
+
+     li {
+	display: block;
+	list-style: none outside;
+	padding: 0 0.5em;
+	transform: translate(0, -5em);
+	opacity: 0;
+	transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+
+	.loaded  & {
+		opacity: 1;
+		transform: translate(0,0);
+	}
+	@for $i from 1 through 4 {
+		&:nth-child(#{$i})  {transition-delay: $i * 0.1s;}
+	}
+	   
+}
+  }
+
+
+ul li a {
+	display: block;
+	padding: 0.5em 1em;
+	color:  black;
+	text-decoration: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 18px;
+	font-weight: 600;
+	
+	 &:hover{
+		 color:  rgb(143, 32, 59);
+		 border-bottom: 2px solid rgb(143, 32, 59);
+	 }
+	
+	}					
+}
+
+.site-footer {
+	display: block;
+}
+.footer-columns{
+	display: flex;
+    background:rgb(119, 142, 156);
+	justify-content: space-between;
+}
+.copyright{
+	background:lightgray;
+	padding:0.5em;
+	text-align: center;
+}
+.site-footer p {
+    font-size: 16px;
+}
+
+
+
+
+

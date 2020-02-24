@@ -1,0 +1,110 @@
+// $breakpoints: (
+//   'phone':      ( max-width:  600px ),
+//   'tablet':     ( max-width:  900px ),
+//   'mobile':     ( max-width: 1024px ),
+//   'desktop':    ( min-width: 1025px ),
+//   'large':      ( min-width: 1600px ),
+// ) !default;
+
+// /// Mixin to manage responsive breakpoints
+// /// @author Hugo Giraudel
+// /// @param {String} $breakpoint - Breakpoint name
+// /// @require $breakpoints
+// @mixin bp($breakpoint) {
+
+//     // If the key exists in the map
+//     @if map-has-key($breakpoints, $breakpoint) {
+//         // Prints a media query based on the value
+//         @media #{inspect(map-get($breakpoints, $breakpoint))} {
+//             @content;
+//         }
+//     }
+
+//     // If the key doesn't exist in the map
+//     @else {
+//         @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+//             + "Available breakpoints are: #{map-keys($breakpoints)}.";
+//     }
+// }
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    .logo{
+        width:60%;
+    }
+    .nav{
+        top:30px;
+    }
+
+   
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .nav{
+       display: flex;
+    }
+
+    .nav ul li
+    { flex-basis: 100%; } 
+
+
+    header section h2{
+        font-size: 1.5rem
+    }
+    .company-info{
+      
+        display:grid;
+        grid-gap: 3em;
+        padding-bottom: 2em;
+    
+    }
+    .company-vision {
+        
+        grid-column: span 1;
+        grid-row: span 1;
+        
+    }
+
+    // section.wrapper header h2 {
+    //     font-size: 1.9em;
+    // }
+
+    // /* section 1 */
+    // .flex.flex-3 article:before {
+    //     position: relative;
+    //     right: 0;
+    // }
+
+    // /* section 3 */
+    // .flex.flex-2 article {
+    //     border-bottom: 1px solid #dbdbdb;
+    //     padding: 10px 0 30px;
+    // }
+
+    //     .flex.flex-2 article:last-of-type {
+    //         border-bottom: none;
+    //         margin-bottom: 0;
+    //     }
+
+    // /* footer */
+    // #footer .inner {
+    //     border-top: none;
+    //     text-align: center;
+    // }
+
+    // #footer .copyright {
+    //     width: 100%;
+    //     order: 2;
+    // }
+
+    // #footer .icons {
+    //     width: 100%;
+    //     order: 1;
+    // }
+}

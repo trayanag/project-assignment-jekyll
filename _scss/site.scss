@@ -1,0 +1,83 @@
+@import 'variables';
+@import 'responsive';
+@import 'reset';
+@import 'typography';
+@import 'navigation';
+@import 'page-recipes';
+@import 'form';
+@import 'social';
+@import 'page-about';
+
+
+
+
+/* 
+
+
+
+
+
+
+
+/* :root{
+    --box-size: 8em
+} */
+/* .box{
+    width: var(--box-size);
+    height: var(--box-size);
+    background: greenyellow;
+    /* transition: transform 0.5s ease-in-out 1s; */
+    /* animation: slide 4s ease-out alternate 3 forwards; */
+/* ease-in-out ease-out vmesto linear  */
+/* animation: slide 2s ease-out infinite forwards; */
+/* }  */
+/* 
+body:hover .box{
+    transform: translateX(20vw) scale(1.5);
+/* } */
+
+/* body{
+    /* display: flex; */
+    /* min-height: 100vh; */
+    /* justify-content: center;
+    align-items: center; */
+    /* padding:3em; */
+    /* margin: 0; */
+/* }   */
+/* a{
+    color: hotpink;
+    transition: color 0.3s ease-in-out 1s;
+}
+a:hover{
+    color: burlywood;
+    */
+/* } */
+/* @keyframes slide{
+    0%{
+        transform: translateX(-20rem);
+    }
+    50%{
+        transform: translateX(10rem);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+        background: red;
+    }
+} */
+
+/* @keyframes slide{
+    0%{
+       
+    }
+    25%{
+        transform: translate(calc(100vw - 5em),0);
+    }
+    50%{
+        transform: translate( calc(100vw - 5em), calc(100vh - 5em));
+    }
+    75%{
+        transform: translate( 0, calc (100vh- 5em))
+       
+    }
+} */

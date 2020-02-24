@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/icomoon/style.css">
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/icomoon/fonts/icomoon.svg">
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
+
+    <script>window.addEventListener('load',(event) => {
+        document.querySelector('body').classList.add('loaded')
+        })
+        </script>
+    <title>Farinha</title>
+</head>
+
+<body>
+
+    <div class="site">
+
+        <header class="site-header">
+
+            <div class="site-branding">
+
+                <img src="{{site.baseurl}}/images/mylogo.png" alt="" class="logo">
+        
+            </div>
+
+            {% include navigation.html  location="header" %}
+
+
+
+   <section>
+       <h2>Cook with love</h2>
+       <p>Farinha is here to make your life full of sweetness</p>
+       
+   </section>
+
+        </header>
+
+        <main class="site-main">
+
+            {{content}}
+          
+
+        </main>
+
+        <footer class="site-footer">
+
+           
+
+            {% include social_network.html location="footer" %}
+            
+        </footer>
+    </div>
+
+</body>
+
+</html>

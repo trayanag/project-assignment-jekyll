@@ -1,0 +1,113 @@
+
+#recipes{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+padding: 2em;
+}
+.cookie-recipe{
+    padding:1.5em;
+    margin: 2em;
+    box-shadow: 3px 3px 5px 5px gray;
+    animation-duration: 3s;
+    animation-name: zoomin;
+}
+
+@keyframes zoomin{
+   0%{
+      transform: scale(0.1);
+      opacity: 0;
+   }
+   60%{
+       transform: scale(1);
+       opacity: 1;
+   }
+   100%{
+       transform: scale(1);
+   }
+ 
+}
+.cookie-recipe img{
+    width:100%
+}
+
+.cookie-recipe h2{
+    text-align: center;
+    font-style: italic;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+.btn-try{
+    border:none;
+    font-size: 15px;
+    padding:10px 30px;
+    display: block;
+    margin: 1em auto;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    background-color: rgb(72, 93, 78);
+    border-radius: 5px;
+
+&:hover{
+background:rgb(248, 124, 103); 
+transform: scale(1,1.1);
+transition:  0.3s;
+    
+}
+}
+
+
+
+.recipe-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.recipe-container article{
+    padding:  3.5em 2em;
+}
+
+.recipe-container article  img{
+    display: block;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.prep-container{
+  text-align: center;
+}
+.prep-container h3{
+    color: rgb(172, 19, 16);
+  }
+
+.prep-container ul{
+    list-style-type: none;
+    margin: 0;
+}
+.prep-container ol{
+     text-align: start;
+}
+
+.btn-back{
+    border:none;
+    font-size: 15px;
+    padding:10px 30px;
+    display: block;
+    margin: 1em auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    background-color: rgb(72, 93, 78);
+    border-radius: 5px;
+    &:hover{
+        background-color: rgb(143, 32, 59);
+    }
+}
