@@ -1,21 +1,4 @@
-<!-- <nav class="nav {{include.location}}">
 
-
-    <ul>
-        {% assign navigation_pages = site.pages | sort:"order" %}
-
-    
-               <li> <a href="/project-assignment-jekyll/">Home</a></li>
-               <li> <a href="/project-assignment-jekyll/about.html">About</a></li>
-               <li> <a href="/project-assignment-jekyll/recipes.html">Recipes</a></li>
-               <li> <a href="/project-assignment-jekyll/contacts.html">Contacts</a></li>
-
-    </ul>
-
-
-
-
-</nav> -->
 
 <!-- 
 <nav class="nav {{include.location}}">
@@ -35,7 +18,7 @@
 <!-- </nav> -->
 
 
-    <nav class="nav">
+    <nav class="nav {{include.location}}">
         <ul>
 
             {% assign navigation_pages = site.pages | sort:"order" %}
