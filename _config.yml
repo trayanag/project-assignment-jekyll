@@ -22,9 +22,9 @@ title: Farinha
 email: trayanagpetrova@gmail.com
 description: Recipes
 destination: docs
-
 baseurl: "/project-assignment-jekyll"
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" 
+
 facebook_username: 
 github_username:  
 
