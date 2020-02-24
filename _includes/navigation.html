@@ -4,22 +4,12 @@
     <ul>
         {% assign navigation_pages = site.pages | sort:"order" %}
 
-        {% for page in navigation_pages %}
-        {% if page.title %}
-        <li class="page-title-{{page.title | slugify}}">
-            
-            
-                <a href="/project-assignment-jekyll/">{{page.title}}</a>
-                <a href="/project-assignment-jekyll/about.html">{{page.title}}</a>
-                <a href="/project-assignment-jekyll/recipes.html">{{page.title}}</a>
-                <a href="/project-assignment-jekyll/contacts.html">{{page.title}}</a>
-            
-        
-        
-        </li>
-        {% endif %}
+    
+               <li> <a href="/project-assignment-jekyll/">Home</a></li>
+               <li> <a href="/project-assignment-jekyll/about.html">About</a></li>
+               <li> <a href="/project-assignment-jekyll/recipes.html">Recipes</a></li>
+               <li> <a href="/project-assignment-jekyll/contacts.html">Contacts</a></li>
 
-        {% endfor %}
     </ul>
 
 
