@@ -7,7 +7,16 @@
         {% for page in navigation_pages %}
         {% if page.title %}
         <li class="page-title-{{page.title | slugify}}">
-            <a href="/project-assignment-jekyll/{{ page.url }}">{{page.title}}</a> </li>
+            
+            
+                <a href="/project-assignment-jekyll/">{{page.title}}</a>
+                <a href="/project-assignment-jekyll/about.html">{{page.title}}</a>
+                <a href="/project-assignment-jekyll/recipes.html">{{page.title}}</a>
+                <a href="/project-assignment-jekyll/contacts.html">{{page.title}}</a>
+            
+        
+        
+        </li>
         {% endif %}
 
         {% endfor %}
