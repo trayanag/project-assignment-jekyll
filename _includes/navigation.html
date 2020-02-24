@@ -1,4 +1,4 @@
-<nav class="nav {{include.location}}">
+<!-- <nav class="nav {{include.location}}">
 
 
     <ul>
@@ -14,5 +14,24 @@
 
 
 
+
+</nav> -->
+
+
+<nav class="nav {{include.location}}">
+    <ul>
+        {% assign navigation_pages = site.pages | sort:"order" %}
+
+        {% for page in navigation_pages %}
+        {% if page.title %}
+        <li class="page-title-{{page.title | slugify}}"><a
+                href="{{ page.url }}">{{page.title}}</a> </li>
+            {% endif %}
+       
+        {% endfor %}
+    </ul>
+
+
+  
 
 </nav>
