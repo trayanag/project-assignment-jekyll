@@ -27,6 +27,14 @@
 //     }
 // }
 
+
+@media only screen and (orientation:landscape){
+
+    body{
+        background-color: lightgreen;
+    }
+}
+
 @media (max-width: 959px){
     iframe{
         height:40vh
