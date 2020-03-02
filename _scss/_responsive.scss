@@ -91,6 +91,24 @@
 
 }
 
+@media(max-width: 360px){
+
+.icon-container{
+    padding:0.6em;
+}
+.social_title{
+    padding: 0.5em;
+}
+.social_title ul li{
+    font-size: 15px;
+    padding-left: 0.1em;
+}
+.recipe-container article img{
+    width: 100%;
+}
+
+}
+
 @media (max-width: 320px) {
 
     header section h2{
