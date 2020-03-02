@@ -1,37 +1,18 @@
-
-
-<!-- 
 <nav class="nav {{include.location}}">
-    <ul>
-        {% assign navigation_pages = site.pages | sort:"order" %}
 
+    <span id="navbar-toggle" onclick="menu()">
+        <li class="icon-menu"></li>
+    </span>
+
+    <ul id="js-menu">
+
+        {% assign navigation_pages = site.pages | sort:"order" %}
         {% for page in navigation_pages %}
         {% if page.title %}
-        <li class="page-title-{{page.title | slugify}}"><a
-                href="{{ page.url }}">{{page.title}}</a> </li>
+        <li class="page-title-{{page.title | slugify}}">
+            <a href="/project-assignment-jekyll{{site.baseurl}}{{page.url}}">{{page.title}}</a>
             {% endif %}
-       
+        </li>
         {% endfor %}
-    </ul> -->
-
-
-<!-- </nav> -->
-
-
-    <nav class="nav {{include.location}}">
-        <ul>
-
-            {% assign navigation_pages = site.pages | sort:"order" %}
-            {% for page in navigation_pages %}
-            {% if page.title %}
-            <li class="page-title-{{page.title | slugify}}">
-                <a href="/project-assignment-jekyll{{site.baseurl}}{{page.url}}">{{page.title}}</a>
-                {% endif %}
-            </li>
-            {% endfor %}
-        </ul>
-    </nav>
-
-  
-
-    
+    </ul>
+</nav>

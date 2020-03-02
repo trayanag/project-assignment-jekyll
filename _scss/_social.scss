@@ -45,7 +45,9 @@
 	font-size: 2em;
   }
 
-
+.icon-menu:before{
+	content:"\e9bd";
+}
   .icon-cake:before {
 	content: "\e900";
   }

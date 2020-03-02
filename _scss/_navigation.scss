@@ -35,6 +35,19 @@ header{
  display: block;
 }
 
+#navbar-toggle{
+    color: darkgreen;
+	position: absolute;
+	font-size: 35px;
+	top:0px;
+	right:20px;
+	cursor: pointer;
+	list-style-type: none;
+	display: none;
+	
+}
+
+
 header section{
 	position: absolute;
 	top: 50%;
@@ -105,6 +118,28 @@ ul li a {
 	}					
 }
 
+.home {
+display: flex;
+justify-content: space-evenly;
+
+}
+.icon-container{
+	
+	padding: 1em;
+
+p{
+	font-size: 17px;
+	text-align: center;
+	font-weight: 600;
+	font-family: 'Gabriela',serif;
+	&:hover{ 
+		color:  rgb(143, 32, 59);
+	}
+}
+
+	
+}
+
 .site-footer {
 	display: block;
 }
@@ -121,6 +156,10 @@ ul li a {
 .site-footer p {
     font-size: 15px;
 }
+
+
+
+
 
 
 
